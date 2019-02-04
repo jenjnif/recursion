@@ -6,8 +6,8 @@ two_dimensional_arr = [[2, 3], [1, 2]]
 
 
 def least_sum_route(single_arr):
-    if single_arr[0] == 1:
-        return 1
+    if len(single_arr) == 1:
+        return single_arr
 
 
 # TESTS
@@ -15,4 +15,4 @@ def least_sum_route(single_arr):
 # first test reduce to single cell and this is base case?
 # If len(list) == 1: return list
 def test_single_cell():
-    assert least_sum_route(single_arr) == 1
+    assert least_sum_route(single_arr) == [1]
